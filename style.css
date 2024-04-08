@@ -1,0 +1,119 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+.banner {
+    background-color: #b1cfe1; /* Example color */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Rest of your CSS... */
+
+h1 {
+    color: #333;
+}
+
+.input-area {
+    max-width: 600px; /* Adjust width as needed */
+    margin: 20px auto; /* Adds margin to the top and centers the box */
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow */
+    background: #fff; /* Optional: for contrast */
+    border-radius: 8px; /* Optional: for rounded corners */
+}
+
+#new-todo {
+    width: 70%; /* Adjust width as needed */
+    padding: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    width: calc(100% - 22px);
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#add-btn, .filters button, #clear-completed, #save-todos {
+    padding: 10px 20px;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#add-btn:hover, .filters button:hover, #clear-completed:hover, #save-todos:hover {
+    background-color: #ccd0cc;
+    color: rgb(47, 45, 45);
+}
+
+#todo-list {
+    list-style: none;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+    background-image: linear-gradient(transparent 1.8em, #f0f0f0 1.8em);
+    background-size: 100% 3.6em;
+    border: 1px solid #ddd;
+}
+
+#todo-list li {
+    padding: 0.5em 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#todo-list li:last-child {
+    border-bottom: none;
+}
+
+#todo-list li.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+#todo-list li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#todo-list li button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+#todo-list li button:hover {
+    background-color: #c9302c;
+}
+
+.filters button.active {
+    background-color: #0275d8;
+}
+
+#status-display {
+    margin-top: 20px;
+    color: #0275d8;
+    font-style: italic;
+}
